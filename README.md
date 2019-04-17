@@ -12,3 +12,9 @@ In Node, we don’t have browser environment objects such as window or the
 document object. Instead, we have other objects that are not available in
 browsers, such as objects for working with the file system, network, operating
 system, etc. 
+
+In NodeJS not exist **window** global object instead of we can to use **global**
+```
+global.console.log
+global.setTimeout
+```
