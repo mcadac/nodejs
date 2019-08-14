@@ -115,7 +115,19 @@ module.exports = Logger;
 
 ```
 
+## NPM package manager
 
+- **Package.json**: This has information about your application such as it's name, it's version, it's entrypoint it'sdependencies an etc.
+
+- To init
+```
+npm init
+```
+
+- To find Node package you can look for it in https://www.npmjs.com
+```
+npm install underscore
+```
 
 ## Code recommendations
 
