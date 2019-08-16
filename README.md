@@ -133,7 +133,9 @@ npm install underscore
 ```
 npm list
 ```
-
+```
+npm list --depth=0
+```
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
