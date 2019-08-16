@@ -129,6 +129,11 @@ npm init
 npm install underscore
 ```
 
+- To see dependencies and their version 
+```
+npm list
+```
+
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
