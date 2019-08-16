@@ -136,6 +136,12 @@ npm list
 ```
 npm list --depth=0
 ```
+
+- Intall jshint: Tool to look for code errors (To install despencies for development you should add the property --save-dev)
+```
+npm install jshint --save-dev
+```
+
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
