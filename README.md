@@ -142,6 +142,11 @@ npm list --depth=0
 npm install jshint --save-dev
 ```
 
+- Uninstall packages
+```
+npm unistall {package_name}
+```
+
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
