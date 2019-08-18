@@ -155,6 +155,7 @@ npm unistall {package_name}
 - **Nodemon** is a tool that helps develop node.js based applications by autmatically restarting the node application when files changes
 ```
 sudo npm install -g nodemon
+nodemon {index.js}
 ```
 ## Code recommendations
 
