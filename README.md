@@ -152,6 +152,10 @@ npm install -g jshint
 npm unistall {package_name}
 ```
 
+- Nodemon is a tool that helps develop node.js based applications by autmatically restarting the node application when files changes
+```
+sudo npm install -g nodemon
+```
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
