@@ -137,7 +137,7 @@ npm list
 npm list --depth=0
 ```
 
-- Intall jshint: Tool to look for code errors (To install despencies for development you should add the property --save-dev)
+- Intall **jshint**: Tool to look for code errors (To install despencies for development you should add the property --save-dev)
 ```
 npm install jshint --save-dev
 ./node_modules/.bin/jshint {js-file-name}
@@ -152,7 +152,7 @@ npm install -g jshint
 npm unistall {package_name}
 ```
 
-- Nodemon is a tool that helps develop node.js based applications by autmatically restarting the node application when files changes
+- **Nodemon** is a tool that helps develop node.js based applications by autmatically restarting the node application when files changes
 ```
 sudo npm install -g nodemon
 ```
