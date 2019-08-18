@@ -140,7 +140,7 @@ npm list --depth=0
 - Intall jshint: Tool to look for code errors (To install despencies for development you should add the property --save-dev)
 ```
 npm install jshint --save-dev
-./node_modules/.bin/jshint
+./node_modules/.bin/jshint {js-file-name}
 
 or
 
