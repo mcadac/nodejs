@@ -115,6 +115,11 @@ module.exports = Logger;
 
 ```
 
+## Read Env variables
+```
+const port = process.env.PORT || 3000;
+```
+
 ## NPM package manager
 
 - **Package.json**: This has information about your application such as it's name, it's version, it's entrypoint it'sdependencies an etc.
