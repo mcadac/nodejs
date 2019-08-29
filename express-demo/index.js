@@ -6,6 +6,7 @@ const Joi = require('joi');
 const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
+const config = require('config');
 const app = express();
 
 
@@ -14,7 +15,14 @@ app.use(express.json());
 app.use(logger);
 app.use(express.static('public'));
 app.use(helmet());
-app.use(morgan('tiny'));
+
+console.log(`Application name : ${config.get('name')}`);
+console.log(`Application name : ${config.get('email.host')}`);
+
+if(app.get('env') === 'development'){
+    app.use(morgan('tiny'));
+    console.log('Morgan enable...');
+}
 
 
 const object = [

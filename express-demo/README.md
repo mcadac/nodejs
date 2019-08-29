@@ -9,10 +9,28 @@ https://www.npmjs.com/package/express
 app.use(express.json());
 ```
 
-## Node package used with express
+## Node packages used with express
 - For input validations
 ```
 npm install joi
+```
+
+- For config files
+```
+npm install config
+
+const config =  require('config');
+
+//Create a folder called 'config' with a file 'default.json'
+
+```
+
+## Node Env variables
+- In Node applications you can use the standart enviroment varibale called NODE_ENV
+- You can use it with express using the next sentence
+```
+//This reads the env variable NODE_ENV
+app.get('env');
 ```
 
 ## Middleware

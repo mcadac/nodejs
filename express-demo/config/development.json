@@ -1,0 +1,6 @@
+{
+    "name" : "DEVELOPMENT Express test Milo",
+    "email":{
+        "host": "https://test.com"
+    }
+}
