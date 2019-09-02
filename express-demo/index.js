@@ -2,6 +2,7 @@
 * @author milo
 */  
 const logger = require('./logger.js');
+const debug = require('debug')('app:startup');
 const Joi = require('joi');
 const express = require('express');
 const morgan = require('morgan');
@@ -16,14 +17,20 @@ app.use(logger);
 app.use(express.static('public'));
 app.use(helmet());
 
+//Template Engines
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 console.log(`Application name : ${config.get('name')}`);
 console.log(`Application name : ${config.get('email.host')}`);
 
 if(app.get('env') === 'development'){
     app.use(morgan('tiny'));
     console.log('Morgan enable...');
+    debug('Debug log message...');
 }
 
+debug('Test log message...');
 
 const object = [
     {id: 1, name: 'nodejs'},
@@ -33,7 +40,8 @@ const object = [
 
 app.get('/', (req, res) => {
     console.log('Testing nodemon');
-    res.send('Milo code!');
+    //res.send('Milo code!');
+    res.render('index', {title: 'Express aplication', message: 'Milo Code'});
 });
 
 app.get('/api/courses', (req, res) => {

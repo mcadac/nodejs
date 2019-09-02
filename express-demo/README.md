@@ -25,6 +25,18 @@ const config =  require('config');
 
 ```
 
+- Template Engines (pug)
+```
+npm i pug
+
+//Template Engines
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+res.render('index', { title: 'Values', message: 'hello'});
+```
+
+
 ## Node Env variables
 - In Node applications you can use the standart enviroment varibale called NODE_ENV
 - You can use it with express using the next sentence
