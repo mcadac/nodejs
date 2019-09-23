@@ -162,6 +162,18 @@ npm unistall {package_name}
 sudo npm install -g nodemon
 nodemon {index.js}
 ```
+## Modules
+
+- Debug module, this module uses an Env variable named DEBUG e.g DEBUG=app:startup. You can set many options in the env variable e.g DEBUG=app:startup,app:db
+
+```
+npm i debug
+
+const debug = require('debug')('app:startup');
+
+debug('Log message...');
+```
+
 ## Code recommendations
 
 - If you use Intellij IDEA, you can enable NodeJS completion assistant
