@@ -36,6 +36,10 @@ app.set('views', './views');
 res.render('index', { title: 'Values', message: 'hello'});
 ```
 
+- Mongodb (Database integration)
+```
+npm i mongodb
+```
 
 ## Node Env variables
 - In Node applications you can use the standart enviroment varibale called NODE_ENV
